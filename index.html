@@ -194,7 +194,7 @@ img{display:block;max-width:100%;}
 .wbh{padding:22px 20px;display:flex;flex-direction:column;gap:10px;}
 .wbh.a{background:linear-gradient(135deg,#c9747b,#d4959a,#c4917a);}
 .wbh.b{background:linear-gradient(135deg,#b07040,#c49060,#d4a870);}
-.wbh.c{background:linear-gradient(135deg,#b07090,#c49aaa,#d4bac8);}
+.wbh.c{background:linear-gradient(135deg,#8a5a8a,#aa7aaa,#c09ab8);}
 .wday{font-size:.52rem;letter-spacing:.34em;text-transform:uppercase;color:rgba(255,255,255,.68);}
 .wttl{font-family:'Cormorant Garamond',serif;font-size:1.85rem;color:white;line-height:1.1;}
 .wtgs{display:flex;gap:6px;flex-wrap:wrap;}
@@ -2922,11 +2922,11 @@ const _origBuildScore=buildScore;
 
 /* Share week FAB trigger */
 .share-week-trigger{
-  position:fixed;bottom:144px;right:14px;z-index:7800;
-  background:linear-gradient(135deg,#c9747b,#a85060);
+  position:fixed;bottom:82px;right:16px;z-index:7800;
+  background:linear-gradient(135deg,#9c27b0,#7b1fa2);
   color:#fff;border:none;border-radius:50%;
   width:42px;height:42px;font-size:18px;
-  box-shadow:0 3px 10px rgba(201,116,123,.3);
+  box-shadow:0 4px 14px rgba(156,39,176,.4);
   cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;
 }
 .share-week-trigger:hover{transform:scale(1.1);}
@@ -3389,7 +3389,7 @@ html{scroll-padding-top:56px;}
 #amal-fab{position:fixed;bottom:82px;right:14px;z-index:8100;width:52px;height:52px;
   border-radius:50%;background:linear-gradient(135deg,#c9747b,#d4959a);
   display:flex;align-items:center;justify-content:center;
-  box-shadow:none;cursor:pointer;border:none;transition:transform .2s;}
+  box-shadow:0 4px 20px rgba(201,116,123,.45);cursor:pointer;border:none;transition:transform .2s;}
 #amal-fab:hover{transform:scale(1.08);}
 #amal-fab::after{content:'';position:absolute;top:-1px;right:-1px;width:13px;height:13px;
   border-radius:50%;background:#5ddd87;border:2px solid #fff;}
@@ -3542,7 +3542,7 @@ html{scroll-padding-top:56px;}
     <button class="amal-q" onclick="amalQ('How important is sleep for progress?')">Sleep</button>
     <button class="amal-q" onclick="amalQ('How do I track my progress properly?')">Track progress</button>
     <button class="amal-q" onclick="amalQ('I feel like giving up')">Feeling like quitting</button>
-    <button class="amal-q" onclick="amalQ('Will 3noona be proud of me?')">Will 3noona be proud?</button>
+    <button class="amal-q" onclick="amalQ('Amal, will 3L be proud of me?')">Will 3L be proud?</button>
     <button class="amal-q" onclick="amalQ('Amal, are you proud of me?')">Are you proud?</button>
     <button class="amal-q" onclick="amalQ('Amal, should I order an acai today?')">Acai question</button>
   </div>
@@ -3909,9 +3909,9 @@ personal:[
 ],
 
 threeL:[
-  "3noona was built for you. Every feature, every reminder, every message — it was designed because your goals matter. That belief was baked in before you even opened it for the first time.",
-  "3noona sees every session logged, every meal tracked, every habit recorded. That effort is real and it accumulates. Be proud of showing up even when it felt hard.",
-  "3noona was built to be with you on every day — the hard days, the easy days, and the days you are not sure what to do. That is exactly why it exists.",
+  "He already is. He built this entire guide because he believes in you. Now it is your turn to believe in yourself the same way he does.",
+  "He is proud of every single time you open this guide and try. Every session. Every meal. Every habit you log. He sees the effort even when you do not feel it.",
+  "He built this guide because he cares about your health, your confidence, and your progress. Because he wanted something to help you grow even on the days he cannot be there to remind you himself.",
   "He would tell you to trust yourself more. To stop waiting until you feel ready. To go to the gym even on the days you do not feel like it. And to eat your protein."
 ],
 
@@ -3941,309 +3941,6 @@ def:[
   "Your three main levers are progressive overload in training, protein at your daily target, and 7 to 9 hours of sleep. Which of these would you like to go deeper on?"
 ]
 
-,
-  supplements:[
-    "Creatine monohydrate is the most researched supplement for muscle performance. Take 3 to 5 grams daily, any time of day, no loading phase required. It works by increasing your muscles available energy during explosive efforts like lifting.",
-    "Protein powder is just food in powder form. It will not make you bulky, it does not damage your kidneys at normal intakes, and it is simply a convenient way to hit your protein target when whole food is not practical.",
-    "Pre-workout can improve focus and performance but it is not magic. The key ingredients are caffeine, beta-alanine, and citrulline. Avoid anything with long proprietary blends. Never take it when you are stressed or have not slept.",
-    "You do not need supplements to make progress. Food first, always. Creatine is the only one with very strong evidence for most people. Fat burners, BCAAs, testosterone boosters — save your money.",
-    "Protein powder timing does not matter as much as total daily protein. Drink it after training if it helps you hit your goal, but the anabolic window is the whole day, not 30 minutes.",
-    "Collagen supplements will not build muscle. They are missing the key amino acids your muscle tissue needs. Focus on real protein sources like chicken, eggs, Greek yogurt, and legumes.",
-    "BCAAs are only useful if you are training fasted and not hitting your protein target from food. If you eat enough protein daily, BCAAs are a waste of money.",
-    "Caffeine is one of the few performance-enhancing supplements with solid science. A strong coffee before training works just as well as most pre-workouts.",
-    "Fat burners do not burn fat. They may slightly raise heart rate or suppress appetite, but they do not target fat cells. The only thing that burns fat is a sustained calorie deficit.",
-    "Vitamin D3 and magnesium are the two most common deficiencies in people who train regularly. Consider getting bloodwork before supplementing heavily."
-  ],
-  fat_loss:[
-    "Fat loss comes down to one thing: being in a calorie deficit over time. Not the type of food, not the timing, not the specific exercise. The deficit is everything. Everything else is strategy to maintain it.",
-    "The scale going up slightly does not mean you gained fat overnight. It could be water retention from sodium, hormonal shifts, glycogen after eating carbs, or a heavier meal. Look at the weekly average.",
-    "The best fat loss strategy is one you can maintain. A 300 to 500 calorie deficit with enough protein to protect muscle is sustainable. Anything more aggressive leads to muscle loss and rebound.",
-    "You cannot spot reduce fat. Crunches will not remove belly fat. Fat comes off the whole body over time based on genetics. Consistent training and a slight deficit over months is the only way.",
-    "Muscle is your metabolism. The more muscle you have, the more calories you burn at rest. This is why resistance training is more powerful for long term fat loss than cardio alone.",
-    "Cardio helps fat loss by burning more calories, but it also increases appetite. Many people plateau because they train harder and unconsciously eat more. Track what you eat during heavy cardio phases.",
-    "Losing weight too fast almost always means losing muscle alongside fat. If you drop more than 0.5kg per week consistently, your deficit is too large. Slow protects your physique.",
-    "Insulin is not the enemy. Eating carbs does not make you fat. Eating more calories than you burn does. Carbs fuel your training and your brain.",
-    "Body recomposition — losing fat while building muscle simultaneously — is real and achievable if you are new to training, eating enough protein, and lifting consistently.",
-    "Sleep is the most underrated fat loss tool. Poor sleep raises cortisol, increases hunger hormones, decreases satiety signals, and impairs recovery. Eight hours is part of your protocol."
-  ],
-  weight_loss:[
-    "Weight loss and fat loss are not the same. You can lose weight by dropping water or muscle, which harms your metabolism. The goal is fat loss with muscle retention — that requires lifting and enough protein.",
-    "If the scale has not moved in two weeks it is not stalling — it is data. Either your intake is higher than you think, you are retaining water, or you need to reassess your actual numbers.",
-    "The best diet is the one you can actually follow. They all work when they create a calorie deficit and include enough protein. Pick the approach that fits your life.",
-    "Weigh yourself at the same time daily — ideally morning after the bathroom before eating. Do not weigh after a big dinner, during your period, or after a salty meal.",
-    "Before your period you may hold 1 to 3 kilos of water. After it, that drops. This is not fat gain. Track your weight in relation to your cycle to understand the real trend.",
-    "Water weight can fluctuate 2 to 3 kilos in a single day based on sodium, hydration, and training. What matters is the trend over 4 to 6 weeks.",
-    "Do not cut calories below 1200. You cannot meet micronutrient needs, muscle loss accelerates, hunger becomes unmanageable, and your training suffers badly."
-  ],
-  form:[
-    "Form matters more than weight. A hip thrust done correctly with 50kg gives better glute activation than a sloppy rep at 100kg. Every exercise has a cue for a reason.",
-    "If something hurts with a sharp or stabbing pain, stop immediately. Muscle burn and fatigue are normal. Joint pain is a warning sign. Know the difference.",
-    "The most common hip thrust mistakes are not reaching full hip extension, letting the lower back arch excessively, and not driving through the heels.",
-    "For Romanian deadlifts, the hinge comes from the hips not the lower back. Keep a neutral spine, push hips back, feel the hamstrings load. The bar should feel like it is pulling your hips backwards.",
-    "For squats, your knees should track over your toes. A slight forward lean is normal. Depth depends on your mobility. Go as deep as you can while keeping a neutral spine.",
-    "Cable kickbacks should be felt in the glute not the lower back. Keep your core tight, do not hyperextend at the top, drive through the heel.",
-    "For lat pulldowns, initiate the pull with your elbows driving down and back — not your biceps. Think pulling your elbows into your pockets. This shifts work onto the lats.",
-    "For shoulder press, avoid shrugging at the top. Keep shoulders packed down away from your ears throughout. If you feel impingement, widen your grip slightly.",
-    "Mind-muscle connection is real and trainable. Before a set, consciously flex the target muscle. During the set, feel it working. This increases activation.",
-    "Exhale during the exertion phase, inhale on the way back. Hip thrust: exhale pushing up, inhale lowering. Lat pulldown: exhale pulling down, inhale returning."
-  ],
-  gym_anxiety:[
-    "Every single person at the gym is focused on themselves. Research shows people vastly overestimate how much others notice them. The person next to you is thinking about their own workout.",
-    "You are allowed to take your time. You are allowed to ask staff how a machine works. You are allowed to use the heavy dumbbells. The gym belongs to you too.",
-    "The best way to reduce gym anxiety is repetition. After 4 to 6 weeks of consistent sessions, the environment becomes familiar and your confidence transforms completely.",
-    "Start with machines before free weights if you are nervous. Machines are more forgiving on form, easier to use alone, and still very effective for glutes, legs, and upper body.",
-    "You are following a structured program with specific exercises, sets, and reps. That puts you ahead of most people in the gym who go in with no real plan.",
-    "Wearing headphones is the universal gym signal for I am here to work. It reduces unwanted interaction and keeps you focused.",
-    "The people who look intimidating have also felt intimidated. Everyone started somewhere. The person lifting heavy today once walked in not knowing how to use a barbell.",
-    "Going alone is completely normal and often better for focus. You control the pace, the exercises, the rest times, and when you leave."
-  ],
-  hip_thrust:[
-    "For maximum glute activation: drive through the heels not the toes, squeeze hard at the top, hold one second, do not hyperextend your lower back.",
-    "The setup matters as much as the movement. The bench should be at mid-scapula. The bar in your hip crease with a pad. Feet hip-width apart. Both feet flat.",
-    "If you are not feeling hip thrusts in your glutes: narrow your stance slightly, consciously squeeze before driving up, pause at the top. Slow the eccentric down too.",
-    "Hip thrusts 3 to 4 times per week is not too much. The glutes are large and recover well. Frequency is your friend for glute growth when you manage total volume.",
-    "Single leg hip thrusts eliminate the stronger leg from helping, forcing each glute to work alone. Start with bodyweight — they are harder than they look.",
-    "Banded hip thrusts add constant tension throughout the movement and increase glute activation at the top. Place the band just above your knees and push out through the whole rep.",
-    "Progressive overload for hip thrusts: add one to two reps or a small weight increment every one to two weeks. Always know what you did last session."
-  ],
-  upper_body:[
-    "Upper body training creates the appearance of a smaller waist even without losing fat. Wide shoulders and a strong back produce a V-taper that transforms how your body looks.",
-    "Lat pulldowns build the width of your back. A strong back improves posture, makes your waist look smaller, and is essential for balance.",
-    "Shoulder press builds the deltoids which cap your arms. Defined shoulders look athletic and elegant. Start light and focus on range of motion.",
-    "Do not fear upper body weights making you broad. You would need years of heavy training and a major calorie surplus to develop bulky mass. What you will develop is tone and posture.",
-    "Preacher curls and bicep curls build the bicep. Two exercises, 3 sets each, twice a week is plenty. The bicep is a small muscle.",
-    "Tricep pushdowns build the back of your arms. The tricep makes up about two thirds of your upper arm. If you want toned arms, triceps matter more than biceps.",
-    "If your upper body feels weak it is because most women undertrain it. Prioritize your pulls — rows and pulldowns — for the biggest impact on posture and strength."
-  ],
-  abs:[
-    "You cannot see your abs if they are covered by body fat. Core training builds the muscles but does not burn fat on top of them. Abs are built in the gym, revealed in the kitchen.",
-    "Dead bug trains deep core stability rather than just surface crunches. It protects your spine and builds the base of all your other movements.",
-    "Cable crunches are superior to floor crunches because they maintain tension throughout the full range of motion.",
-    "Your core includes the rectus abdominis, obliques, transverse abdominis, and lower back. Complete training means anti-rotation and bracing, not just sit-ups.",
-    "Heavy compound lifts like hip thrusts and Romanian deadlifts train your core isometrically harder than most dedicated ab exercises.",
-    "If you want visible abs: calorie deficit, enough protein, consistent resistance training, then patience. Specific ab exercises are the last piece.",
-    "Planks train core endurance. A tight 30 second plank with full body tension beats a 2 minute plank with a sagging back."
-  ],
-  sets_reps:[
-    "For muscle growth, 6 to 20 reps per set all produce similar results when taken close to failure. The 8 to 12 range in this program is the sweet spot for hypertrophy.",
-    "What matters more than rep range is effort. A set of 10 taken to near-failure does more than a set of 20 done casually.",
-    "3 to 4 sets per exercise is the standard for muscle growth. Less than 3 is usually not enough stimulus.",
-    "Rest between sets matters. 2 to 3 minutes between heavy compound sets. 60 to 90 seconds between lighter isolation exercises. Do not rush rest.",
-    "Tempo changes an exercise without changing the weight. A 3 second eccentric on a Romanian deadlift makes it dramatically harder. That is why this program has tempo annotations.",
-    "Going to absolute failure on every set is not necessary and creates too much fatigue. Stop 1 to 2 reps short for most sets. Save all-out effort for your last set.",
-    "More volume over months leads to more growth — but only if you are recovering properly. Start at the lower end of the set range and add gradually."
-  ],
-  meal_prep:[
-    "Meal prep eliminates decision fatigue. When you are tired or rushed, a prepared meal is the difference between hitting your macros and eating whatever is available.",
-    "Simple weekly prep: cook a large batch of protein — chicken, ground beef, eggs — and 2 to 3 carb sources. Mix and match throughout the week.",
-    "Prep ingredients separately and combine them differently each meal. Same protein, different vegetables and sauces. Same effort, different experience.",
-    "Chicken breast keeps 4 days in the fridge. Hard boiled eggs last a week. Greek yogurt is already prepped. Canned tuna needs nothing. Easy proteins.",
-    "Overnight oats: 80g oats, 200g Greek yogurt, 200ml milk, a banana. Over 30g protein and ready in 2 minutes the night before.",
-    "Pre-portioning removes guesswork. Weigh your food when you prep, not when you eat. Tracking becomes much faster and more accurate.",
-    "Batch cook proteins in an air fryer while you do something else. Season in bulk, cook at once, refrigerate. Meals ready for 3 to 4 days."
-  ],
-  hydration:[
-    "2.5 litres of water daily is your baseline. On hard training days or hot weather, aim for 3 litres. Hydration directly affects energy, joint health, digestion, and muscle contraction.",
-    "If you feel tired or get afternoon headaches, drink water before blaming anything else. Mild dehydration impairs cognitive function and makes everything feel harder.",
-    "Training dehydrated reduces performance meaningfully. Even 2 percent dehydration causes measurable drops in strength and endurance. Drink 500ml in the 2 hours before your session.",
-    "Coffee and tea count toward your hydration. They are mild diuretics but the fluid more than compensates. Do not avoid coffee thinking it dehydrates you.",
-    "Pale yellow urine is optimal. Dark yellow means drink more. Completely clear means you may be overhydrating and flushing electrolytes.",
-    "Electrolytes — sodium, potassium, magnesium — are lost in sweat. After a long or intense session, a pinch of salt in your water or an electrolyte drink helps.",
-    "A glass of water before each meal slightly reduces appetite and improves digestion. Simple habit, multiple benefits."
-  ],
-  injury:[
-    "If something hurts during a lift, stop immediately. Muscle burn and fatigue are normal. Sharp, stabbing, or shooting pain is not.",
-    "Most gym soreness is DOMS — delayed onset muscle soreness. It peaks 24 to 48 hours after training and resolves by 72. It is a sign of repair, not injury.",
-    "Lower back pain during hip thrusts usually means you are hyperextending at the top. Keep ribs down, brace core, stop before your lumbar arches excessively.",
-    "Knee pain during squats is often from knees caving inward. Push knees out in line with toes, reduce weight, slow down the movement.",
-    "Shoulder impingement during pressing usually means the shoulder blade is not moving properly. Do not shrug during the press. Keep shoulder blades retracted.",
-    "One extra rest day costs very little progress. Pushing through an injury costs weeks or months. Learn the difference between discomfort and damage.",
-    "Ice for acute swelling in the first 48 hours. Heat and movement improve blood flow after the initial inflammation phase."
-  ],
-  schedule:[
-    "Three days per week is the sweet spot for recovery and growth frequency at this stage. You do not need to train every day to make great progress.",
-    "Rest days are not wasted days. Muscle is built during recovery, not during the workout. The workout creates the stimulus, sleep and nutrition create the adaptation.",
-    "If you miss a day, do not try to double up. Pick back up on the next scheduled day. Consistency over months matters infinitely more than any single session.",
-    "The order of A, B, C does not have to be fixed every week. What matters is getting all three done with at least one rest day between sessions.",
-    "Three lifting days plus 8000 to 10000 daily steps plus sleep and nutrition is a complete program. You do not need to add more. Execute better.",
-    "Train when you are most energized. Morning is not superior to evening. The best time is when you will actually do it and perform well.",
-    "Even two sessions a week maintains your progress reasonably well if life gets busy. A shortened workout beats no workout."
-  ],
-  body_image:[
-    "Your body is not the problem. The goal of this program is to make you stronger, more energized, and more capable — not to fix something broken.",
-    "Progress photos from the same angle and lighting are far more revealing than the mirror. The mirror lies based on mood and lighting. Photos show the real change.",
-    "The body you want is built through consistent daily actions, not through hating where you are now. Respect your body enough to feed it well and train it hard.",
-    "Comparison to social media is not fair. You are seeing curated, filtered, sometimes edited content from people with different genetics, histories, and goals.",
-    "Your weight is not your worth. The scale measures gravitational force. It does not measure muscle, hydration, strength, health, or character.",
-    "Celebrate non-scale victories: lifting heavier than last month, sleeping better, having more energy, fitting clothes differently, completing a session you would have skipped. These are real wins.",
-    "Your physique is changing even when you cannot see it yet. Strength increases, tissue remodeling, cardiovascular adaptation — it all happens before the visual result appears."
-  ],
-  periods:[
-    "Training during your period is safe and often beneficial. Exercise releases endorphins that reduce cramps and improve mood. Reduce intensity if you need to, but do not stop completely.",
-    "In the follicular phase — days 1 to 14 roughly — estrogen rises and you feel stronger with faster recovery. Great time for heavier training.",
-    "In the luteal phase — days 15 to 28 roughly — progesterone rises and fatigue increases. You may feel weaker and more bloated. This is normal and does not mean you are regressing.",
-    "Your perceived effort is higher before your period. The same workout will feel harder. Do not judge your fitness by how a session felt the week before your period.",
-    "Iron levels drop during menstruation. If you feel unusually fatigued while training on your period, ensure your diet has adequate iron — red meat, lentils, spinach.",
-    "Reducing high-intensity cardio and adding more stretching or yoga in the days before your period can help manage symptoms. Adjust intensity based on how you feel.",
-    "Training consistently through your cycle while adjusting intensity intelligently is the most effective long term approach."
-  ],
-  plateau:[
-    "A plateau means your body has adapted to your current stimulus. The solution is progressive overload — more weight, more reps, less rest, or new variation. Something must change.",
-    "Training plateaus often coincide with nutrition plateaus. If bodyweight has stalled and calories have not changed in months, recalculate your maintenance — your body composition has shifted.",
-    "Deload weeks — a week at significantly reduced volume and intensity — often break plateaus. After a deload, you typically come back stronger. Fatigue was masking your fitness.",
-    "A plateau on a lift often means your technique has hit a ceiling. Film your movement. Poor form limits how much weight you can effectively use.",
-    "Mental fatigue creates physical plateaus. If everything feels hard and motivation is low, you may need more sleep, less stress, or a full week off.",
-    "Changing exercise variation can restart progress. If hip thrusts have stalled, switch to banded or single-leg variations for a few weeks.",
-    "If the scale has not moved in four weeks: track intake for three days accurately using a food scale. Most people discover they were eating more than they thought."
-  ],
-  warmup:[
-    "Warming up is not optional. A proper warm-up reduces injury risk, increases range of motion, activates target muscles, and improves performance on your first working set.",
-    "For lower body days: 5 minutes light walking, then glute bridges with a band, clamshells, and leg swings. This activates the glutes and hips before your main lifts.",
-    "For upper body days: arm circles, band pull-aparts, and light rows prepare the shoulders and upper back before pressing or pulling heavy.",
-    "Warm-up sets are not junk volume. Do 2 progressively heavier sets of your first exercise before your working sets. This primes the movement pattern and nervous system.",
-    "Dynamic warm-up movements — controlled movement through range — are more effective than static stretching before you train.",
-    "You should be lightly sweating before your first heavy set. If you are not, the warm-up was not sufficient."
-  ],
-  steps:[
-    "10000 steps daily is a strong target for non-exercise calorie burning. Daily movement outside the gym accumulates into a significant difference over weeks.",
-    "Your daily steps can make or break fat loss. Someone training 3 days but walking 12000 steps has far higher total energy expenditure than someone who trains daily but sits the rest of the time.",
-    "Walking is low-impact, sustainable, and has real cardiovascular and mental health benefits. It does not interfere with gym recovery the way running does.",
-    "Incline walking on the treadmill is one of the most effective cardio tools for people who do not want to run. It engages the glutes and hamstrings and burns significantly more than flat walking.",
-    "Park further, take stairs, walk during phone calls, do a 10 minute walk after dinner. These habits compound meaningfully.",
-    "Tracking steps combined with your workout log gives a real picture of your total energy output for the week."
-  ],
-  doms:[
-    "DOMS — delayed onset muscle soreness — is normal and peaks 24 to 48 hours after training. It means your muscles are repairing and getting stronger. It is not the only sign of a good workout though.",
-    "Not being sore does not mean you did not train hard enough. As your body adapts, soreness decreases. This is progress, not a sign to push harder.",
-    "The best treatment for DOMS is light movement — a walk, easy stretching, or a light session the following day. Lying completely still makes soreness worse.",
-    "Hydration and protein intake directly affect how quickly you recover from soreness. Both support the repair process happening in your muscle tissue.",
-    "You can train a sore muscle as long as it is not a sharp or joint-based pain. The soreness will typically reduce as you warm up."
-  ],
-  cravings:[
-    "Cravings are usually a signal — either a calorie deficit is too aggressive, protein is too low, sleep is poor, or stress is high. Address the root cause before trying to white-knuckle through.",
-    "High-protein snacks kill hunger and cravings better than anything. Greek yogurt, cottage cheese, hard boiled eggs, protein bars. Front-load protein in your day.",
-    "A craving for something specific — chocolate, chips, bread — is usually a craving for energy, comfort, or habit. Try eating a full meal with protein first. The craving often disappears.",
-    "Allowing yourself to eat the thing you are craving in a moderate, planned way is healthier long-term than restricting until you binge. Rigid restriction leads to loss of control.",
-    "Drink a glass of water and wait 10 minutes before eating something out of craving. Hunger and thirst signals are often confused. Many cravings are actually dehydration.",
-    "If you crave sugar constantly, check that you are eating enough overall calories and that your sleep is adequate. Both have direct effects on sugar craving intensity."
-  ],
-  cheat_meals:[
-    "A cheat meal does not ruin your progress. One meal out of 21 in a week cannot undo consistent effort. What you do most of the time matters infinitely more than what you do occasionally.",
-    "The problem with cheat meals is when they become cheat days or cheat weekends. A single meal with high sodium will cause a 1 to 2 kilo water weight spike on the scale the next morning. This is not fat. It will drop in 1 to 2 days.",
-    "There is no magic food that is completely off-limits. Flexible dieting — tracking macros and including foods you enjoy in your budget — is more sustainable than strict clean eating.",
-    "If you feel guilt or shame after eating certain foods, that is worth examining. Food is not moral. You are not good or bad based on what you ate.",
-    "If you regularly feel out of control around certain foods, it usually means you are being too restrictive overall. Include those foods in moderate amounts regularly so they lose their power over you."
-  ],
-  posture:[
-    "Poor posture is extremely common from sitting and phone use. The most impactful exercises for fixing it are in this program already — rows, lat pulldowns, and face pulls strengthen the upper back which pulls shoulders back.",
-    "Rounded shoulders usually come from tight chest muscles and weak upper back. Chest stretching plus rowing exercises is the correction.",
-    "Anterior pelvic tilt — hips tilting forward, lower back arching — is common. Hip flexor stretching plus glute activation exercises, which are throughout this program, directly address it.",
-    "Standing or sitting with your ears over your shoulders, shoulders over your hips is optimal posture. Most people have their head forward and shoulders rounded from screen time.",
-    "Core strength supports posture. A weak core causes the spine to rely on passive structures for support. Every exercise in this program that requires core bracing is also improving your posture."
-  ],
-  water:[
-    "Aim for 2.5 to 3 litres of water daily. On training days or in hot weather, go higher.",
-    "Your first glass of water should be first thing in the morning before food or coffee. You are mildly dehydrated after 7 to 8 hours without drinking.",
-    "A reusable bottle you carry everywhere is the single most effective hydration habit. If water is out of sight, it is out of mind.",
-    "Sparkling water counts. Herbal tea counts. Fruit infused water counts. It does not have to be plain.",
-    "Headaches, low energy, difficulty concentrating in the afternoon — these are almost always dehydration before they are anything else."
-  ],
-  sleep_tips:[
-    "Sleep is when muscle is built. Growth hormone is released primarily during deep sleep. No amount of training or nutrition compensates for consistent poor sleep.",
-    "Aim for 7.5 to 9 hours of actual sleep, not time in bed. The difference matters.",
-    "A consistent sleep and wake time — including weekends — is more powerful for sleep quality than almost any supplement.",
-    "Avoid screens in the 30 minutes before sleep. Blue light suppresses melatonin, the hormone that initiates sleep.",
-    "Keep your room cool and dark. Temperature drop is one of the signals your body uses to initiate sleep. Most people sleep in rooms that are too warm.",
-    "If you cannot sleep before training, a short nap of 20 minutes improves cognitive performance and physical output meaningfully."
-  ]
-,
-  goals:[
-    "A goal without a plan is just a wish. Write down exactly what you want, by when, and what the weekly actions are that get you there. Then work the actions, not the dream.",
-    "Set a process goal, not just an outcome goal. I want to complete all three workouts every week is a process goal. I want to lose 10kg is an outcome. Process goals are within your control. Outcomes follow.",
-    "Short term goals should lead to a long term vision. If your short term goal is to hit all three sessions this week, your long term vision should be the person you are becoming through that habit.",
-    "Make your goals specific and measurable. Not I want to get fit but I want to hip thrust my bodyweight for 3 sets of 10 by month 3. That gives you something to track.",
-    "Review your goals weekly. Not to judge yourself, but to adjust. Life changes. Your plan should adapt without your direction changing.",
-    "Tell someone your goal. Accountability increases follow-through dramatically. Even telling this app counts — it is why the logging exists."
-  ],
-  eating_out:[
-    "Eating out does not ruin your progress. Order protein first — steak, chicken, fish, eggs. Build the rest of the meal around that. Skip the bread basket if you are not hungry for it.",
-    "Most restaurant meals can be roughly tracked. Grilled protein plus vegetables plus a starch is a complete balanced meal. Ask for sauces on the side and do not stress the exact macros.",
-    "At a restaurant in Dubai: grilled proteins, salads, and rice-based dishes are widely available and easy to fit into any nutrition plan. You do not have to eat separately from everyone else.",
-    "One meal out does not derail a week of consistent eating. The problem is when eating out becomes the default rather than the exception. Enjoy it without guilt, then get back on track at the next meal.",
-    "If you track macros, estimate high when eating out. Better to log 600 calories and have it be 500 than to log 400 and wonder why your progress stalled."
-  ],
-  fasting:[
-    "Intermittent fasting works for fat loss because it reduces your eating window and makes it easier to eat fewer calories. It is not magic — it works by helping you maintain a deficit.",
-    "If you lift weights, training fasted is fine as long as you are not doing extremely high-intensity work. Have your protein meal as soon as possible after training.",
-    "Fasting is a tool, not a requirement. If skipping breakfast helps you eat less overall and you feel good, it is useful. If it makes you ravenous and you overeat at dinner, it is not the right tool for you.",
-    "Your first meal of the day should always include a significant amount of protein regardless of when it is. Breaking a fast with only carbs or fruit leads to a blood sugar spike and crash.",
-    "Long extended fasts — 24 hours or more — impair your training performance and can increase muscle breakdown if done regularly. For people who lift, 16-8 intermittent fasting is the standard approach."
-  ],
-  scale_obsession:[
-    "The scale is one data point among many. Use it alongside progress photos, measurements, how your clothes fit, and how you perform in the gym. Any single metric alone is misleading.",
-    "Weighing yourself daily creates emotional noise. The weekly average — adding all seven daily weights and dividing by seven — is far more informative and less anxiety-inducing.",
-    "If the scale makes you anxious or ruins your day, put it away and use photos and measurements instead. Progress is not only visible on the scale.",
-    "A kilogram of fat and a kilogram of muscle weigh the same but look completely different. Someone who has done a body recomposition may weigh the same while looking dramatically different.",
-    "The scale will not move if you are building muscle at the same rate you are losing fat. This is actually the best possible outcome — but you will only see it in photos, measurements, and the mirror."
-  ],
-  discipline:[
-    "Discipline is not a personality trait you either have or do not have. It is a skill that is built through repeated small choices. Every time you train when you did not want to, you are building it.",
-    "Motivation comes and goes. Discipline shows up when motivation does not. The goal is to make showing up automatic enough that it does not require motivation.",
-    "The hardest part of any workout is starting. Tell yourself you only have to train for 10 minutes. You will almost always keep going once you have started.",
-    "Systems beat willpower. Do not rely on motivation to prepare your food or go to the gym. Make it the path of least resistance — pack your gym bag the night before, prep your meals in advance.",
-    "Discipline means honouring commitments you made to yourself. Treat your training schedule like an appointment that cannot be cancelled without a real reason.",
-    "The people who consistently achieve their fitness goals are not more gifted. They made the decision once and execute it daily without renegotiating the question."
-  ],
-  protein_sources:[
-    "The highest protein per calorie foods: chicken breast, turkey, white fish, egg whites, Greek yogurt, cottage cheese, canned tuna, and protein powder. These are your staples.",
-    "For Dubai-based options: labneh is a surprisingly high protein dairy option. Chicken shawarma without bread can be a solid protein meal. Grilled hammour and similar white fish are everywhere and excellent.",
-    "Eggs are one of the most complete and bioavailable protein sources available. Two eggs plus three egg whites gives roughly 30g of protein at around 250 calories.",
-    "Greek yogurt is one of the easiest protein hacks. Full fat Greek yogurt has around 10g protein per 100g. Low fat versions can be closer to 10-12g. Mix with fruit and oats for a full meal.",
-    "Legumes — lentils, chickpeas, beans — are good protein sources but are incomplete proteins. Combine them with a grain or dairy for a complete amino acid profile.",
-    "If you struggle to hit protein targets: add a protein source to every meal without exception. Do not have a meal with only carbs and fat. Every single eating occasion should have protein."
-  ],
-  vegan_vegetarian:[
-    "Vegetarian or vegan athletes can absolutely build muscle and perform well. It requires more planning to hit protein targets and ensure complete amino acid profiles.",
-    "The challenge for plant-based diets and muscle building: most plant proteins are incomplete and lower in leucine, the amino acid most important for triggering muscle protein synthesis. Eat a variety of sources and eat more total protein.",
-    "Best plant-based protein sources: tofu, tempeh, edamame, seitan, lentils, chickpeas, quinoa, Greek yogurt if vegetarian, eggs if vegetarian. Protein powder from pea or soy is a useful supplement.",
-    "Plant-based diets are often lower in creatine, zinc, iron, vitamin B12, and omega-3 fats. If you eat plant-based, these are worth monitoring and supplementing if needed.",
-    "Soy protein is the highest quality plant protein and has a complete amino acid profile. Despite some myths, normal consumption of soy does not affect hormones in women."
-  ],
-  gym_gear:[
-    "Gym shoes matter more than most people think. A running shoe has a cushioned, unstable base that is wrong for squatting and pressing. A flat-soled shoe like a Converse or specific lifting shoe gives a stable base for ground-based exercises.",
-    "A weightlifting belt is useful for heavy compound lifts but is not needed at beginner to intermediate levels. Learn to brace your core properly first. The belt should support a brace, not replace it.",
-    "Resistance bands are one of the highest value pieces of gym equipment. They are cheap, portable, add activation work before sessions, and can modify exercises.",
-    "Gym gloves are not necessary and actually reduce your grip feedback on the bar. Calluses are normal. If your hands get sore, build up grip strength gradually.",
-    "A good gym bag, a water bottle, headphones, and a notebook or phone to log workouts are genuinely all you need. Everything else is optional."
-  ],
-  tracking:[
-    "What gets measured gets managed. Tracking your workouts — exercises, weights, sets, reps — is what makes progressive overload possible. Without records you are guessing.",
-    "Tracking food for even two to four weeks teaches you the calorie and protein content of your most-eaten foods. After that, you can estimate reasonably without tracking every single day.",
-    "Progress photos every two to four weeks, same time of day, same lighting, same angle. These show changes the mirror hides because you see yourself daily.",
-    "Body measurements — waist, hips, thighs, arms — are a better indicator of body composition change than scale weight. Take them monthly.",
-    "The workout log in this app is your most powerful tool. Use it every session. Review it weekly. Let the numbers guide your next session."
-  ],
-  mindful_eating:[
-    "Mindful eating means being present during meals. Eating slowly, without screens, and paying attention to hunger and fullness signals. This reduces overeating more effectively than strict rules.",
-    "It takes about 20 minutes for your brain to register fullness. If you eat very fast, you will consistently overeat before the signal arrives. Slow down.",
-    "Hunger has levels. Learn to distinguish I am genuinely physically hungry from I am bored, stressed, or eating out of habit. Most overeating is not driven by physical hunger.",
-    "Eating because of stress, boredom, or emotion is extremely common. Identify your triggers. Have a non-food alternative response ready — a walk, a glass of water, a 5 minute stretch.",
-    "The goal is not to eat less. The goal is to eat the right amount and actually enjoy it. Food restriction and guilt are not part of a sustainable, healthy relationship with eating."
-  ],
-  comparing:[
-    "Comparison is the thief of progress. The only person you should compare yourself to is who you were last month. Every other comparison is irrelevant and usually unfair.",
-    "When you compare yourself to someone further along, you are comparing your chapter 2 to their chapter 20. You do not know their starting point, their timeline, their sacrifices, or their struggles.",
-    "Social media fitness is not reality. Angles, lighting, pumps before photos, years of training history, and sometimes editing — what you see is a highlight reel, not a standard.",
-    "The person you envy at the gym was once a beginner. The physique you admire was built over years. Give yourself the same time you would give them.",
-    "Use admiration as information, not comparison. If you see a physique you like, ask what training and habits produce that. Then go build those habits."
-  ],
-  motivation:[
-    "You will not always feel motivated. The people who make consistent progress are not more motivated — they trained on the days motivation was absent too.",
-    "Motivation is highest at the beginning and after a result. In between, it dips. This is normal and not a sign to stop. It is a sign to lean on your schedule instead.",
-    "Find a reason that is bigger than aesthetics. How do you want to feel at 40? What do you want to be capable of? Who do you want to be? A strong why survives the days when the mirror does not cooperate.",
-    "Progress creates motivation. When you lift heavier than last week, when your jeans fit differently, when you have more energy — that is what sustains you. Start before you feel ready.",
-    "When you really do not want to train: put on your gym clothes, drive there, commit to 10 minutes. The activation energy is the obstacle. Once you have overcome it, the workout usually takes care of itself."
-  ]
 };
 
 var _used={};
@@ -4276,7 +3973,7 @@ var TRIGGERS={
   progress:["how do i track","should i take progress photos","how often should i weigh","dont see changes","why does progress feel slow","should i track measurements","what matters more than the scale","how often should i adjust","when should i increase calories","how do i stay patient","track progress","progress photos","progress slow"],
   mindset:["how do i become disciplined","build confidence","what if i fail","what if i make mistakes","why is consistency important","feel overwhelmed","how do i believe in myself","stop overthinking","want to quit","secret to success","disciplined","believe in myself","overthinking"],
   personal:["will i achieve my goals","are you proud","what would 3l tell me","what should i remember on hard days","do small steps matter","am i stronger than i think","dont see results yet","feel stuck","what should i focus on today","will i achieve","proud of me","small steps","stronger than i think","feel stuck","focus on today"],
-  threeL:["3noona","why did she","will she be proud","built this guide","why did 3noona","proud of me","will 3noona","is 3noona proud"],
+  threeL:["3l","3L","why did he","will he be proud","built this guide","why did 3l","proud of me","will 3l"],
   acai:["acai","smoothie","fynd","mixed berries"],
   givingup:["feel like giving up","want to give up","feel like quitting","giving up","want to quit","i feel like quitting"],
   advice:["final advice","best advice","one piece of advice","your final","what is your advice"]
@@ -4295,45 +3992,7 @@ window.amalToggle=function(){
   _open=!_open;
   m.classList.toggle("open",_open);
   var bd=document.getElementById("amal-backdrop");if(bd)bd.classList.toggle("on",_open);
-  if(_open&&!_greeted){_greeted=true;setTimeout(function(){amalBot(greet());},350);,
-  supplements:["creatine","protein powder","pre workout","supplement","bcaa","fat burner","do i need","what supplements","protein shake","whey","should i take","multivitamin","collagen","caffeine"],
-  fat_loss:["lose fat","body fat","fat loss","lose belly","belly fat","burn fat","why am i not losing","how to lose","love handles","body composition","recomp","spot reduce","spot reduction"],
-  weight_loss:["lose weight","losing weight","diet plan","calorie deficit","how many calories","how fast","weight not moving","scale not moving","stalled","eating less not losing","why am i not losing weight"],
-  form:["correct form","how to do","am i doing","technique","feel it in my back","dont feel","should i feel","hurts when","pain when","how to perform","position","setup","form check","proper form"],
-  gym_anxiety:["scared of gym","nervous about gym","dont know anyone","people staring","feel out of place","intimidated","everyone knows","feel like everyone is watching","do i look stupid","feel embarrassed","first time at gym","self conscious"],
-  hip_thrust:["hip thrust","barbell hip thrust","glute bridge","how to hip thrust","feel hip thrust","hip thrust back pain","why dont i feel hip thrusts","single leg hip thrust","hip thrust weight"],
-  upper_body:["upper body","arms","back exercises","shoulder","chest","pull","row","lat","pull down","bicep","tricep","push","tone arms","arm exercises"],
-  abs:["core","abs","abdominals","flatten my stomach","tighten my core","how to get abs","crunch","dead bug","plank","visible abs","six pack","flat stomach","stomach exercises","ab workout"],
-  sets_reps:["how many sets","how many reps","rep range","sets per exercise","how much volume","rest between sets","rest time","how long should i rest","tempo","how slow","how fast should i lift"],
-  meal_prep:["meal prep","prepare food","batch cook","what to cook","food for the week","prep meals","cook in advance","food prep","plan my meals"],
-  hydration:["how much water","water intake","dehydrated","drink water","water during workout","electrolytes","not drinking enough water","how many litres","hydration"],
-  injury:["i have pain","hurts","knee pain","lower back pain","shoulder pain","wrist pain","something hurts","injured","pain during","aches","muscle pain","strain","pulled","sore joint"],
-  schedule:["how often should i train","training schedule","how many days","training frequency","when should i train","rest between workouts","days per week","can i train every day","workout schedule","days off"],
-  body_image:["hate my body","feel ugly","feel fat","feel chubby","dont like how i look","compare myself","progress photos","wish i looked","hate how i look","body dysmorphia","not good enough body"],
-  periods:["on my period","during my period","train while on period","menstrual","period cramps","before my period","pms","luteal phase","follicular","cycle and training","hormones affect","period weight"],
-  plateau:["hit a plateau","not progressing","progress has stopped","same weight for months","no longer improving","not getting stronger","stopped seeing results","not changing","why am i stuck"],
-  warmup:["should i warm up","warm up","warming up","how to warm up","stretching before","dynamic warmup","skip warm up","activate before","glute activation","is warm up"],
-  steps:["daily steps","10000 steps","how many steps","steps per day","walking enough","incline walking","treadmill walking","does walking count","steps goal","hit my steps","not hitting steps"],
-  doms:["sore","soreness","doms","delayed onset","muscle soreness","so sore after","why am i sore","sore muscles","sore the next day","muscle ache","can i train sore"],
-  cravings:["cravings","i keep craving","cant stop eating","want to eat everything","hungry all the time","always hungry","want junk food","sugar cravings","crave sweets","binge eating","overeating"],
-  cheat_meals:["cheat meal","cheat day","ate something bad","ate bad","ate unhealthy","went off plan","bad weekend","ruined my diet","ate junk","is it okay to eat","treat meal"],
-  posture:["posture","rounded shoulders","back posture","sitting too much","hunchback","anterior pelvic tilt","forward head","bad posture","fix my posture"],
-  water:["water","drink more","am i drinking enough","how much should i drink","water before workout","first thing morning","not drinking water"],
-  sleep_tips:["cant sleep","sleep quality","sleep better","wake up tired","bad sleep","not sleeping well","sleep and fitness","sleep for muscle","sleep schedule","melatonin"]
-,
-  goals:["my goal","set a goal","what should my goal","how do i know if","realistic goal","goal setting","progress goal","how long will it take","when will i see"],
-  eating_out:["eating out","restaurant","eating at","dinner out","going out to eat","social eating","lunch out","cant track","cant weigh","travelling","holiday","event"],
-  fasting:["intermittent fasting","fasting","skip breakfast","eating window","16 8","18 6","not eating in the morning","when to eat","breakfast","first meal"],
-  scale_obsession:["obsessed with the scale","checking the scale","weigh myself every day","scale going up","why did the scale go up","scale making me","hate the scale","weight fluctuation"],
-  discipline:["no discipline","cant stay consistent","keep falling off","no willpower","always quit","how to be disciplined","how to stay motivated","keep giving up","cant stick to"],
-  protein_sources:["what protein to eat","high protein foods","protein rich","protein options","best protein sources","what to eat for protein","good protein","protein in dubai","labneh","tuna","eggs"],
-  vegan_vegetarian:["vegan","vegetarian","plant based","no meat","dairy free","no animal","tofu","lentils","chickpeas","plant protein"],
-  gym_gear:["what shoes","lifting shoes","gym shoes","need gloves","weightlifting belt","gym bag","what to wear","gym clothes","what equipment","resistance band"],
-  tracking:["should i track","tracking macros","how to track","food diary","log my food","progress tracking","measure progress","weigh my food","myfitnesspal","calorie counting"],
-  mindful_eating:["emotional eating","eating out of boredom","stress eating","binge","cant stop eating once i start","eat my feelings","out of control with food","mindful","eat slowly","eating too fast"],
-  comparing:["comparing myself","everyone looks better","why does she","why do they","other girls","other women","wish i had her","not as good as","further along than me","jealous of"],
-  motivation:["no motivation","lost motivation","dont feel like","cant get myself","why bother","not seeing results so why","lost interest","tired of trying","burned out","fed up"]
-}
+  if(_open&&!_greeted){_greeted=true;setTimeout(function(){amalBot(greet());},350);}
   if(_open){var inp=document.getElementById("amal-inp");if(inp)setTimeout(function(){inp.focus();},200);}
 };
 
@@ -4964,32 +4623,5 @@ document.addEventListener("DOMContentLoaded",function(){
   }
 })();
 </script>
-
-
-
-
-
-<style id="v31-zoom-fix">
-/* Prevent iOS Safari auto-zoom on input focus */
-#amal-inp {
-  font-size: 16px !important;
-  /* Scale text visually smaller while keeping 16px for browser */
-  transform-origin: left center;
-}
-</style>
-
-
-
-
-
-
-
-
-<style id="v32-clean">
-.share-week-trigger { right:auto!important;left:16px!important;bottom:90px!important;box-shadow:none!important; }
-#amal-fab { box-shadow:none!important; }
-#amal-inp { font-size:16px!important; }
-</style>
-
 </body>
 </html>
